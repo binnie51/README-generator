@@ -1,5 +1,19 @@
 # README-generator
+A command-line application that enables users to generate a professional README file from a user's input using the Inquirer package from npm.
 
+## How to use?
+Users will be given sets of questions/prompts and their inputed will taylored into the the already existed templated. 
+### How to install?
+1. Download the clone repository
+2. Node.js is required to run the application
+3. Install the required npm library package
+### How 
+
+## Technologies
+* Node.js
+* npm package manager (inquirer)
+
+## Demo Video
 ## Your Task
 
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
@@ -56,3 +70,6 @@ Here are some guidelines to help you get started:
 * Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
 
 * Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
+
+## Licesnse
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
