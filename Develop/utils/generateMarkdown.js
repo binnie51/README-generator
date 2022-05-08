@@ -1,5 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
 function renderLicenseBadge(license) {
   switch (license) {
     case "ISC":
@@ -22,22 +23,47 @@ function renderLicenseBadge(license) {
       return "[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)";
     case "Perl":
       return "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)";
-                    
+    default:
+      return '';            
   };
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+}
+
+// // TODO: Create a function that returns the license section of README
+// // If there is no license, return an empty string
+// function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title} 
+  ![${data.license}](https://img.shields.io/badge/license-${data.license}-green.svg)
 
+  ## Description
+  ${data.description}
+
+  ## Instruction 
+  ${data.instruction}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contribution
+  ${data.contribution}
+
+  ## Tests
+  ${data.test}
+
+  ## Questions?
+  My gitHub: ${data.github} 
+  Email me @ ${data.email}
+
+  ## License
+  Copyright (c) ${data.github}. All rights reserved.
 `;
 }
 
