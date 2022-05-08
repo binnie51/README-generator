@@ -40,7 +40,19 @@ const questions = [
         type: "list", 
         name: "license",
         message: "What license should your project have?",
-        choice : ["ISC", "MIT", "GNU AGPLv3"]
+        choice : [
+            "ISC",
+            "MIT",
+            "GNU AGPLv3",
+            "Mozilla",
+            "IBM",
+            "Apache",
+            "BSD",
+            "Open Database License",
+            "Public Domain Dedication and License",
+            "Perl",
+            "The Artistic License 2.0"
+        ]
     },
     {
         type: "input",
