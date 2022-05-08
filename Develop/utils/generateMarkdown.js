@@ -75,7 +75,7 @@ function generateMarkdown(data) {
   ${data.instruction}
 
   ## Usage
-  ${data.usage}
+  ${data.functionality}
 
   ## Contribution
   ${data.contribution}
