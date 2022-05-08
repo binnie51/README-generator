@@ -18,12 +18,38 @@ const questions = [
     {
         type: "input",
         name: "instruction",
-        message: "What are the intallation instructors?"
+        message: "What are the installation process?"
     },
     {
         type: "input",
-        name: "",
-        message: ""
+        name: "functionality",
+        message: "How would one use this application?"
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "What are the contribution guidelines?"
+    },
+    {
+        type: "input",
+        name: "test",
+        message: "What are the test instructions?"
+    },
+    {
+        type: "list", 
+        name: "license",
+        message: "What license should your project have?",
+        choice : ["ISC", "MIT", "GNU AGPLv3"]
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "What is your GitHub username?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email address?"
     }
 ];
 
