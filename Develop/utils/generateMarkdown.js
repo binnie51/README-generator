@@ -1,47 +1,72 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// A function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-
 function renderLicenseBadge(license) {
   switch (license) {
     case "ISC":
-      return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+      return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]";
     case "MIT":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
     case "GNU AGPLv3":
-      return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
+      return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)]";
     case "Mozilla":
-      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]";
     case "IBM":
-      return "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";
+      return "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)]";
     case "Apache":
-      return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+      return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
     case "BSD":
-      return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+      return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
     case "Open Database License":
-      return "[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)";
+      return "[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)]";
     case "Public Domain Dedication and License":
-      return "[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)";
+      return "[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)]";
     case "Perl":
-      return "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)";
+      return "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)]";
     default:
       return '';            
   };
 }
 
-// TODO: Create a function that returns the license link
+// A function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  switch (license) {
+    case "ISC":
+      return "(https://opensource.org/licenses/ISC)";
+    case "MIT":
+      return "(https://opensource.org/licenses/MIT)";
+    case "GNU AGPLv3":
+      return "(https://www.gnu.org/licenses/agpl-3.0)";
+    case "Mozilla":
+      return "(https://opensource.org/licenses/MPL-2.0)";
+    case "IBM":
+      return "(https://opensource.org/licenses/IPL-1.0)";
+    case "Apache":
+      return "(https://opensource.org/licenses/Apache-2.0)";
+    case "BSD":
+      return "(https://opensource.org/licenses/BSD-3-Clause)";
+    case "Open Database License":
+      return "(https://opendatacommons.org/licenses/odbl/)";
+    case "Public Domain Dedication and License":
+      return "(https://opendatacommons.org/licenses/pddl/)";
+    case "Perl":
+      return "(https://opensource.org/licenses/Artistic-2.0)";
+    default:
+      return '';
+  };
 }
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
 // function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// A function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} 
-  ![${data.license}](https://img.shields.io/badge/license-${data.license}-green.svg)
+  let license = data.licence;
+  
+  return `
+  # ${data.title} 
+  ${renderLicenseBadge(license)}${renderLicenseLink(license)}
 
   ## Description
   ${data.description}
