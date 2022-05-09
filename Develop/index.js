@@ -18,7 +18,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "instruction",
+        name: "installation",
         message: "What are the installation process?"
     },
     {
@@ -29,7 +29,7 @@ const questions = [
     {
         type: "input",
         name: "contribution",
-        message: "What are the contribution guidelines?"
+        message: "List contributor(s)"
     },
     {
         type: "input",
@@ -50,8 +50,7 @@ const questions = [
             "BSD",
             "Open Database License",
             "Public Domain Dedication and License",
-            "Perl",
-            "The Artistic License 2.0"
+            "Perl"
         ]
     },
     {
@@ -78,7 +77,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then(data => {
-        writeToFile("README.md", generateMarkdown(data));
+        writeToFile("genrateREADME.md", generateMarkdown(data));
     })
 }
 
