@@ -12,8 +12,9 @@ Users will be given sets of questions/prompts and their inputed will taylored in
 * Node.js
 * npm package manager (inquirer)
 
-## Demo 
-![demo](./assests/videos/README%20generator%20demo%20(1).gif)
+## Demo
+[Click here for a full-view video](./assests/videos/README%20generator%20demo.webm) <br/>
+![demo](./assests/videos/README%20generator%20demo%20(1).gif) 
 ## User Story
 
 ```md
