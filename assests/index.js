@@ -13,8 +13,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "How would you describe your project?",
-        message: "description"
+        name: "description",
+        message: "How would you describe your project?"
     },
     {
         type: "input",
@@ -39,8 +39,8 @@ const questions = [
     {
         type: "list", 
         name: "license",
-        message: "What license should your project have?",
-        choice : [
+        message: "Choose license:",
+        choices: [
             "ISC",
             "MIT",
             "GNU AGPLv3",
