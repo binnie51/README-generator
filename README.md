@@ -13,7 +13,7 @@ Users will be given sets of questions/prompts and their inputed will taylored in
 * npm package manager (inquirer)
 
 ## Demo
-[Click here for a full-view video](./assests/videos/README%20generator%20demo.webm) <br/>
+[Click here for a full-view video](https://drive.google.com/file/d/1OWwvoivhHJM5pXi_t9rbFGeueMoB-lbE/view) <br/>
 ![demo](./assests/videos/README%20generator%20demo%20(1).gif) 
 ## User Story
 

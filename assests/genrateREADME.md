@@ -12,23 +12,23 @@
   * [Questions?](#questions)
 
   ## Description
-  This project does....
+  This app does....
 
   ## Installation 
-  Do this and that
+  Do step 1 and 2...
 
   ## Usage
-  Simply do 1 and then 2
+  You do this first, then.... to get this
 
   ## Contributor
-  Vincent Tjia
+  Vincent T
 
   ## Tests
-  Install the package and do these steps..
+  This and that
 
   ## Questions?
   My gitHub: binnie51 
-  Email me @ binnie51.mail.com
+  Email me @ binnie@mail.com
 
   ## License
   Copyright (c) binnie51. All rights reserved.
